@@ -30,8 +30,17 @@ const newLi = document.createElement('li');
 //9 - Give the li the text "four".
 newLi.innerText = 'four';
 
-//10 - Give the li the text "four".
+//10 - Append the li to the ul element.
+list.appendChild(newLi);
 
 //12 - Loop over all of the lis inside the ol tag and give them a background color of "green".
+let lisIn = document.querySelectorAll("ol li");
+for(let i = 0; i < lisIn.length; i++)
+{
+    lisIn[i].style.backgroundColor = "green";
+}
 
 //13 - Remove the div with a class of footer.
+const footer = document.querySelector(".footer");
+footer.remove();
+
